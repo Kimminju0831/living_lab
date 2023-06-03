@@ -1,0 +1,312 @@
+@font-face {
+    font-family: 'Happiness-Sans-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@keyframes guide-effect {
+    0% {
+    width: 25px;
+    }
+    100% {
+    font-size: 26px;
+    }
+
+}
+
+@keyframes blink-effect {
+    0% {
+        width: 99%;
+        height: 99%;
+    }
+
+    100% {
+        width: 103%;
+        height: 103%;
+    }
+}
+
+@keyframes border-effect {
+    0% {
+        border: 7px dashed red; 
+    }
+    100% {
+        border: 0px; 
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 5px rgba(255, 255, 0, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 0, 0.7);
+    }
+}
+
+p {
+    font-family: 'Happiness-Sans-Bold', serif;
+}
+
+nav{
+    font-family: 'Happiness-Sans-Bold', serif;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+.mission-box:after{ clear: both; display: block; content: ''}
+
+.mission-box {
+    height: 100%;
+    background-color: #FFF4E7;
+    width: 70%;
+    border: 1px solid;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+#logo_mission {
+    width: 20%;
+}
+
+.progress-container {
+    background-color: #FFC42C;
+    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.progress {
+    float: right;
+    width: 75%;
+    margin: 10px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.progress-text {
+    float: left;
+    margin: 10px;
+    margin-right: 0px;
+    width: 15%;
+    font-size: 15px;
+    text-align: center;
+}
+
+#mission {
+    float: left;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+.time-box {
+    float: right;
+    width: 70px;
+    border-left: 1px solid;
+    height: 100%;
+    margin: auto 0;
+    border-radius:0px 5px 5px 0px;
+}
+
+.menu_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* padding-top: 50px; */
+  }
+  
+.menu_box{
+    display: grid;
+    width: 150vw;
+    height: 80vw;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vw;
+    place-items: center;
+}
+  
+.eat-in {
+    background-color: white;
+    font-family: 'Happiness-Sans-Bold', serif;
+    border: 1px solid;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.take-out {
+    background-color: white;
+    font-family: 'Happiness-Sans-Bold', serif;
+    border: 1px solid;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.eat-img {
+    display: inline-block;
+    width: auto;
+    height: 100px;
+    margin-top: 20vw;
+}
+
+.logo-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.start-container {
+    background-size: cover;
+    margin-top: -5px;
+}
+
+.start-container img {
+    width: 100%;
+}
+
+.logo-container img {
+    width: 20%;
+}
+
+.guide {
+    color: white;
+    margin: 10px;
+    margin-top: 40px;
+    font-family: 'Happiness-Sans-Bold', serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+span {
+    font-family: 'Happiness-Sans-Bold', serif;
+}
+
+.touch {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.bound {
+    animation-direction: alternate;
+    animation-name: guide-effect;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.bound-2 {
+    animation-direction: alternate;
+    animation-name: blink-effect;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.receipt-container {
+    background-color: white;
+    width: 90vw;
+    text-align: center;
+    margin-left: 5vw;
+    color: #005738;
+    margin-top: 35px;
+}
+
+.receipt-0 {
+    width: 100%;
+    display: flex;
+    border-bottom: 2px dashed #005738;
+    padding-left: 10px;
+}
+
+.receipt-1 {
+    width: 100%;
+    display: flex;
+}
+.receipt-2 {
+    border-top: 2px dashed #005738;
+    border-bottom: 2px dashed #005738;
+    text-align: left;
+    padding-left: 10px;
+    width: 100%;
+    height: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.receipt-2 p {
+    margin-bottom: 0;
+}
+
+#receipt-menu {
+    width: 60%;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+
+#receipt-price {
+    width: 40%;
+    text-align: right;
+    margin-bottom: 0px;
+    padding-right: 10px;
+}
+
+.receipt-3 {
+    padding-bottom: 1px;
+    height: 40px;
+}
+
+.receipt-button {
+    width: 80px;
+    background-color: #005738;
+    margin: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+#button-delete {
+    float:left;
+}
+
+#button-modify {
+    float: right;
+}
+
+.next-button {
+    /*position: fixed; */
+    bottom: 10px;
+    width: 90%;
+    color: white;
+    border-radius: 5px;
+    background-color: #2AA478;
+    text-align: center;
+    padding: 2px;
+    margin-left: 5%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.guide-box {
+    border: 7px solid red;
+}
+
+.explanation {
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Happiness-Sans-Bold', serif;
+    animation: pulse 1s alternate infinite;
+}
+

@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Happiness-Sans-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.body_container {
+    font-family: 'Happiness-Sans-Bold', serif;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.body_button {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bottom_box {
+    /* height:10vh; */
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.bottom_item {
+    text-align: center;
+}
